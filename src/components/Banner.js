@@ -46,8 +46,9 @@ export const Banner = () => {
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline"> Bienvenue sur mon Portfolio</span>
-                         <h1>{`Hello, Je suis Julie  `} <span className="wrap">{text}</span></h1>
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                         <h1>{`Hello! Je suis Julie , `} <span className="wrap">{text}</span></h1>
+                        <p>Bienvenue sur mon site Web qui se trouve  actuellement toujours en construction ,
+                            je suis fière de pouvoir partager avec toi mon parcours atypique qui m'a permit de découvrir le monde du développement Web .Après avoir travaillé dans differents domaines , plus souvent par nécissité que par passion, j'ai décidé de me réorienter dans l'informatique ! j'ai commencé à apprendre le code en autodidacte via des plateformes en ligne et différents ouvrages. J'ai alors poursuivi avec la formation "Développeur web et web mobile  à l'école O'clock"qui m'a permit de suivre des cours en téléprésentiel.Je suis actuellement à la recherche d'une alternance ou d'un CDI dans ce même domaine :) </p>
                         <button onClick={() => console.log('connect')}> Let's connect <ArrowRightCircle size ={25}/></button>           
                     </Col>
                     <Col xs= {12} md={6} xl={5}>

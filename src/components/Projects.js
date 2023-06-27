@@ -1,6 +1,6 @@
 import { Container,Row,Col,Nav,Tab } from "react-bootstrap";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
+import projImg1 from "../assets/img/sun.png";
+import projImg2 from "../assets/img/project-img1.png";
 import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import { ProjectCard } from "./ProjectCards";
@@ -11,17 +11,19 @@ export const Projects =() =>{
 
         {
             title:"Projet react numéro 1",
-            description: "un projet pas ouf",
+            description: "application météo React utilisant plusieurs API",
             imgUrl: projImg1,
+            Url:"https://weather-app-mu-ashen.vercel.app/",
         },
         {
             title:"Projet react numéro 2",
-            description: "un projet parmis tant d'autres",
+            description: "réalisation d'un pokedex en React avec json API ",
             imgUrl: projImg2,
+            url:"https://react-pokemons-app.vercel.app/",
         },
         {
             title:"Projet react numéro 3 incroyable",
-            description: "un projet ",
+            description: "un projet en cours ",
             imgUrl: projImg3,
         },
     ];
@@ -31,7 +33,7 @@ export const Projects =() =>{
           <Row>
             <Col size={12}>
                   <h2>Projets</h2>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <p>voici quelques projets réalisés en dehors de ma formation</p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                       <Nav.Item>
@@ -50,9 +52,14 @@ export const Projects =() =>{
                             {
                               projects.map((project, index) => {
                                 return(
+                                  
                                   <ProjectCard
                                   key={index}
+                              
                                   {...project}
+                                  
+                                 
+                                
                                   />
 
                                 )
